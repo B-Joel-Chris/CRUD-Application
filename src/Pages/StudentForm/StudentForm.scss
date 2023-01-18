@@ -1,0 +1,15 @@
+.mainwrapper-form{
+    display: flex;
+    background-color: #fff;
+    width: 90%;
+    margin: 0 auto;
+    
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    &--formcontainer{
+      margin: 0 auto;
+      width: 40%;
+        
+    }
+}
