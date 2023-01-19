@@ -1,15 +1,44 @@
 .mainwrapper-form{
-    display: flex;
+    // display: flex;
     background-color: #fff;
-    width: 90%;
-    margin: 0 auto;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 12px -3px rgba(0,0,0,0.64);
     
-    flex-direction: column;
+    // flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    &--formcontainer{
-      margin: 0 auto;
-      width: 40%;
+    &__formtitle{
+        font-size: 20px;
+        padding: 10px;
         
     }
+    &--formcontainer{
+        display: grid;
+        
+        width: 100%;
+      
+
+   
+       
+   
+      &__footer{
+        
+        margin: 20px 15px;
+        
+      }
+        
+    }
+}
+
+.row{
+    flex-flow: wrap;
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fill,minmax(30%,1fr));
+      padding: 15px;
 }

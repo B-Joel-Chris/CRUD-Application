@@ -4,7 +4,7 @@ import FormTextField from './FormTextField'
 const DynamicFieldLoader = (field:string,item:any) => {
  switch(field){
     case("FormTextField"):
-        return<div className='field'><FormTextField {...item}/></div>
+        return <div className="field"> <FormTextField {...item}/></div>
     default:
         return "component missing";
  }

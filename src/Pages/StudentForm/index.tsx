@@ -3,7 +3,7 @@ import { useForm,FormProvider,SubmitHandler } from 'react-hook-form'
 import * as yup from 'yup'
 import {yupResolver} from '@hookform/resolvers/yup'
 import axios from 'axios'
-import { STUDENT_FORM_ELEMENTS } from './helper'
+import { newSTUDENT_FORM_ELEMENTS } from './helper'
 import DynamicFieldLoader from '../../SharedComponents/DynamicFieldLoader'
 import { useNavigate, useParams } from 'react-router-dom'
 import{PrimaryButton} from '@fluentui/react'
@@ -113,18 +113,30 @@ const StudentForm = () => {
 
   return (
     <div className='mainwrapper-form'>
+        <div className="mainwrapper-form__formtitle"><p>Student <span style={{color:"#396CC5"}}>Form</span></p></div>
+        <hr/>
         <FormProvider {...StudentFormMethods}>
             <div className='mainwrapper-form--formcontainer'>
             <form  onSubmit={StudentFormMethods.handleSubmit(StudentFormSubmitHandler)}>
                 {
-                    STUDENT_FORM_ELEMENTS.map((item:any)=>{
-                        const updatedItem = getAdditionalProps(item)
-                        return DynamicFieldLoader(item.type,updatedItem)
+                    newSTUDENT_FORM_ELEMENTS.map((row:any)=>{
+                       return(<div className={row.className}>
+                            {
+                                row.control.map((item:any)=>{
+                                    const updatedItem = getAdditionalProps(item)
+                                    return DynamicFieldLoader(item.type,updatedItem)
+                                })
+                            }
+                        </div>
+                       )  
                     })
                 }
+                <div className='mainwrapper-form--formcontainer__footer'>
                 {/* <input type={"submit"}/> */}
                 <PrimaryButton text='Submit' onClick={StudentFormMethods.handleSubmit(StudentFormSubmitHandler)} ></PrimaryButton>
+                </div>
             </form>
+            
             </div>
         </FormProvider></div>
   )

@@ -29,6 +29,7 @@ return(
             <TextField
                 type={typeOf==='number'?'number':'text'}
                 label={label}
+                styles={{fieldGroup:{border:0, background:"#F0F0F0"}}}
                 defaultValue={defaultValue}
                 placeholder={placeholder}
                 {...field}

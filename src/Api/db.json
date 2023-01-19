@@ -1,30 +1,17 @@
 {
   "data": [
     {
-      "studentname": "Joel Chrisxxs",
-      "rollnumber": 12,
-      "english": 12,
-      "telugu": 21,
-      "hindi": "21",
-      "science": 21,
-      "social": 21,
-      "activities": 12,
-      "totalmarks": 122,
-      "newEntryId": 0.4832477488846276,
-      "id": 1
-    },
-    {
-      "totalmarks": 890,
-      "activities": 89,
-      "social": 98,
-      "science": 9,
-      "telugu": 98,
-      "english": 89,
-      "rollnumber": 123,
-      "studentname": "Chris b",
-      "hindi": "89",
-      "newEntryId": 0.9930127043964849,
-      "id": 2
+      "totalmarks": 90,
+      "activities": 90,
+      "social": 90,
+      "science": 90,
+      "telugu": 90,
+      "english": 90,
+      "rollnumber": 13,
+      "studentname": "Somebody",
+      "hindi": "90",
+      "newEntryId": 0.7751579274216973,
+      "id": 4
     },
     {
       "totalmarks": 90,
@@ -33,15 +20,89 @@
       "science": 90,
       "telugu": 90,
       "english": 90,
-      "rollnumber": 23,
-      "studentname": "Satish",
+      "rollnumber": 14,
+      "studentname": "Anybody",
       "hindi": "90",
-      "newEntryId": 0.15133815807909556,
-      "id": 3
+      "newEntryId": 0.4386863015002016,
+      "id": 5
     },
     {
-      "newEntryId": 0.5204051114371684,
-      "id": 4
+      "totalmarks": 90,
+      "activities": 90,
+      "social": 90,
+      "science": 90,
+      "telugu": 90,
+      "english": 90,
+      "rollnumber": 15,
+      "studentname": "Anyone",
+      "hindi": "90",
+      "newEntryId": 0.8968345480559605,
+      "id": 6
+    },
+    {
+      "totalmarks": 90,
+      "activities": 90,
+      "social": 90,
+      "science": 90,
+      "telugu": 90,
+      "english": 90,
+      "rollnumber": 16,
+      "studentname": "Everyone",
+      "hindi": "90",
+      "newEntryId": 0.8938612216363127,
+      "id": 7
+    },
+    {
+      "totalmarks": 90,
+      "activities": 90,
+      "social": 90,
+      "science": 90,
+      "telugu": 90,
+      "english": 89,
+      "rollnumber": 16,
+      "studentname": "Everybody",
+      "hindi": "90",
+      "newEntryId": 0.9519672161039454,
+      "id": 8
+    },
+    {
+      "totalmarks": 90,
+      "activities": 90,
+      "social": 90,
+      "science": 90,
+      "telugu": 90,
+      "english": 90,
+      "rollnumber": 1,
+      "studentname": "Somthing",
+      "hindi": "90",
+      "newEntryId": 0.3740016342324466,
+      "id": 9
+    },
+    {
+      "totalmarks": 90,
+      "activities": 90,
+      "social": 90,
+      "science": 90,
+      "telugu": 90,
+      "english": 90,
+      "rollnumber": 100,
+      "studentname": "somesomebody",
+      "hindi": "89",
+      "newEntryId": 0.3952864927522237,
+      "id": 10
+    },
+    {
+      "totalmarks": 90,
+      "activities": 90,
+      "social": 90,
+      "science": 90,
+      "telugu": 90,
+      "english": 90,
+      "rollnumber": 12,
+      "studentname": "somesomeosmbody",
+      "hindi": "90",
+      "newEntryId": 0.21565980627729542,
+      "id": 11
     }
   ]
 }

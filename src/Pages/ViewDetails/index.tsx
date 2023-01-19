@@ -94,7 +94,7 @@ const ViewDetails = () => {
                     <>
                     <div className='maincontainer__tablewrapper--entryactions'>
                     <rrdom.Link to={`/update/${item.id}`}><MdMode size={15}/></rrdom.Link>
-                   <Link onClick={()=>deleteEntry(item.id)}><MdDelete size={15}/></Link>
+                   <Link onClick={()=>deleteEntry(item.id)}><MdDelete size={15} color={"black"}/></Link>
                    </div>
                     </>
             )
@@ -103,7 +103,7 @@ const ViewDetails = () => {
     ]
 
     const deleteEntry=async(item:any)=>{
-        console.log(item);
+        // console.log(item);
         
         try{
             const res = await axios.delete(`http://localhost:5000/data/${item}`)
