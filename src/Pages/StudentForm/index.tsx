@@ -23,7 +23,7 @@ const StudentForm = () => {
         rollnumber?:number,
         english?:number,
         telugu?:number,
-        hindhi?:number,
+        hindi?:number,
         science?:number,
         social?:number,
         activities?:number,
@@ -31,15 +31,15 @@ const StudentForm = () => {
     }
 
     const StudentFormSchema:yup.SchemaOf<IStudentForm> = yup.object().shape({
-        name:yup.string(),
-        rollnumber:yup.number(),
-        english:yup.number(),
-        telugu:yup.number(),
-        hindhi:yup.number(),
-        science:yup.number(),
-        social:yup.number(),
-        activities:yup.number(),
-        totalmarks:yup.number()
+        name:yup.string().required().min(2),
+        rollnumber:yup.number().required(),
+        english:yup.number().required().max(100),
+        telugu:yup.number().required().max(100),
+        hindi:yup.number().required().max(100),
+        science:yup.number().required().max(100),
+        social:yup.number().required().max(100),
+        activities:yup.number().required().max(100),
+        totalmarks:yup.number().required().max(100)
     })
 
     const StudentFormMethods = useForm<any>({
@@ -111,10 +111,13 @@ const StudentForm = () => {
             })
     },[StudentData])
 
+    console.log(StudentFormMethods.watch(),StudentFormMethods.formState.errors);
+    
+
   return (
     <div className='mainwrapper-form'>
         <div className="mainwrapper-form__formtitle"><p>Student <span style={{color:"#396CC5"}}>Form</span></p></div>
-        <hr/>
+        
         <FormProvider {...StudentFormMethods}>
             <div className='mainwrapper-form--formcontainer'>
             <form  onSubmit={StudentFormMethods.handleSubmit(StudentFormSubmitHandler)}>
@@ -136,7 +139,6 @@ const StudentForm = () => {
                 <PrimaryButton text='Submit' onClick={StudentFormMethods.handleSubmit(StudentFormSubmitHandler)} ></PrimaryButton>
                 </div>
             </form>
-            
             </div>
         </FormProvider></div>
   )

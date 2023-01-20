@@ -67,7 +67,7 @@ export const newSTUDENT_FORM_ELEMENTS=[
         className:"row",
         control:[
             { type:"FormTextField",
-            name:"studentname",
+            name:"name",
             label:"Student Name",
             isRequired:true
             },

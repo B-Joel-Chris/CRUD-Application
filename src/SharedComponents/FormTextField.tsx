@@ -3,7 +3,7 @@ import { TextField,Label } from '@fluentui/react'
 import { Controller,Control,useFormContext } from 'react-hook-form'
 
 interface IFormTextField{
-    name?:string|number|any,
+    name:string|number|any,
     typeOf?: string|number,
     label?:string,
     isRequired?:boolean,

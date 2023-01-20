@@ -5,6 +5,7 @@ import axios from 'axios'
 import * as rdom from 'react-router-dom'
 import './ViewDetails.scss'
 import {MdMode,MdDelete} from 'react-icons/md'
+import {GrFormView} from 'react-icons/gr'
 
 const ViewDetails = () => {
     const [currentStudentData, setCurrentStudentData] = useState();
@@ -12,7 +13,7 @@ const ViewDetails = () => {
     const tableColumns:IColumn[]=[
         {
             key:"col1",
-            fieldName:"studentname",
+            fieldName:"name",
             name:"Name",
             minWidth:80,
             maxWidth:100,
@@ -93,7 +94,8 @@ const ViewDetails = () => {
                 item&&
                     <>
                     <div className='maincontainer__tablewrapper--entryactions'>
-                    <rrdom.Link to={`/update/${item.id}`}><MdMode size={15}/></rrdom.Link>
+                        <rrdom.Link to={`/view/${item.id}`}><GrFormView size={15} color={"black"}/></rrdom.Link>
+                    <rrdom.Link to={`/update/${item.id}`}><MdMode size={15} color={"black"}/></rrdom.Link>
                    <Link onClick={()=>deleteEntry(item.id)}><MdDelete size={15} color={"black"}/></Link>
                    </div>
                     </>
